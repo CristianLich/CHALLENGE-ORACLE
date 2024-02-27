@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+<body>
+    <!-- Logo -->
+    <img class="logo-img" src="recursos/logo.jpeg" alt=""> 
+    <div class="conteiner">
+
+        <form action="">
+            <div class="entrada-texto">
+
+                <!-- Campo de texto a encriptar -->
+                <textarea name="" id="texto" cols="30" rows="10" autofocus placeholder="Ingrese el texto aqui"></textarea>
+
+
+                <!-- Advertencia -->
+                <div class="advertencia">
+                    <img src="recursos/WhatsApp Image 2024-02-01 at 10.47.05.jpeg" alt="">
+                    <p>Solo letras minusculas y sin acento</p>
+                </div>
+                
+                <!-- Botones -->
+                <div class="botones">
+                    <button class="btn-encriptar" type="button"  onclick="btnCripto('encriptar')"  >Encriptar</button>
+                    <button class="btn-desencriptar" type="button" onclick="btnCripto('desencriptar')">Desencriptar</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Seccion para mostrar el texto -->
+        <div class="ventana-encriptada">
+            <p class="texto-encriptado" id="textoEncriptado"></p>
+            <img src="recursos/muñeco.jpeg" alt="" class="imagen-ventana">
+            <div class="ventana-texto">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Igresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <button class="btn-copiar" 
+                type="button" 
+                onclick="btnCopiar()">
+                Copiar
+            </button>
+        </div>
+
+    </div>
+    <footer>Cristian Joel Lich -- Oracle 6 --</footer>
+    <script src="app/encriptador.js"></script>
+</body>
+</html>

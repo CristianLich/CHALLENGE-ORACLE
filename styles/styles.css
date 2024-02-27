@@ -1,0 +1,138 @@
+:root{
+    --color-texto : #0A3871;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter';
+  }
+.oculto {
+    display: none;
+}
+body {
+    background-color: #F3F5FC;
+    color: var(--color-texto);
+    padding: 40px;
+    position: relative;
+}
+.logo-img {
+    position: absolute;
+}
+
+footer{
+    margin-top: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+textarea{
+    width: 500px;
+    height: 600px;
+    background-color: #F3F5FC;
+    border: none;
+    resize: none;
+    text-align: start;
+    color: #0A3871;
+    padding-top: 60px;
+    font-size: 32px;
+    font-weight: 600;
+}
+textarea::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+
+}
+
+textarea:focus {
+    outline: none;
+  }
+
+.conteiner{
+    display: flex;
+}
+
+.entrada-texto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+
+.advertencia {
+    display: flex;
+    align-items: center;
+}
+.advertencia img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    color: #495057;
+}
+.advertencia p {
+    color: #495057;
+    text-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.20);
+}
+
+
+.botones{
+    display: flex;
+    margin-bottom: 18px;
+}
+button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    
+}
+.btn-encriptar{
+    background-color: #0A3871;
+    padding: 24px;
+    align-items: flex-start;
+    color: #F5F5F5;
+    font-size: 16px;
+    margin-right: 24px;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.20);
+}
+.btn-desencriptar {
+    border: 1px solid #0A3871;
+    background: #D8DFE8;
+    font-size: 16px;
+    color: #0A3871;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.20);
+    margin-right: 44px;
+}
+
+.ventana-encriptada {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    border-radius: 32px;
+    box-shadow: 1px 2px 32px 1px rgba(0, 0, 0, 0.08);
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 360px;
+    position: relative;
+}
+.texto-encriptado {
+    font-size: 28px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.ventana-texto {
+    width: 336px;
+    margin: 20px;
+    text-align: center;
+}
+
+.btn-copiar {
+color: #0A3871;
+font-size: 16px;
+border: 1px solid #0A3871;
+border-radius: 24px;
+position: absolute;
+bottom: 55px;
+left: 16px;
+}
