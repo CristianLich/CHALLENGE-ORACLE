@@ -68,4 +68,5 @@ function desencriptar(texto) {
 function btnCopiar(){
     textoEncriptado.select();
     document.execCommand("copy");
+    console.log('gola')
 }
